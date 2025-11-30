@@ -1,0 +1,26 @@
+{
+  "osm_id": 157757,
+  "epsg": 25832,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      452904.0055813247,
+      5428485.431150508
+    ]
+  },
+  "properties": {
+    "osm_id": 157757,
+    "osm_type": "relation",
+    "lat": 49.0074652,
+    "lon": 8.3560084,
+    "public_transport": "stop_area",
+    "name": "Blohnstraße",
+    "highway": null,
+    "acc_wheelchair": null,
+    "acc_wheelchair:description": null,
+    "railway": null,
+    "amenity": null,
+    "acc_toilets:wheelchair": null,
+    "acc_ramp": null
+  }
+}
