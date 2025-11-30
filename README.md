@@ -17,7 +17,7 @@ Merge OSM geojson and Cityjson data. Create one file-set (.json, _bld.json) per 
 
 ### 3D Building Models
 Generate GLB models from _bld.json files
-[Example](https://github.com/digital-codes/osm-city-3d/blob/main/157757_bld.png)
+![Example](https://github.com/digital-codes/osm-city-3d/blob/main/157757_bld.png)
 
 
 
