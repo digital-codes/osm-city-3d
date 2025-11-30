@@ -46,7 +46,7 @@ from shapely.ops import unary_union
 # CONFIG
 # ----------------------------------------------------------------------
 
-OSM_GEOJSON = "ka_new2.geojson"     # your input OSM GeoJSON file
+OSM_GEOJSON = "ka.geojson"     # your input OSM GeoJSON file
 CITYJSON_DIR = "/mnt_ai/data/ka3d/tp/CityJSON"        # directory with gebaeude_lod2_*.json
 OUTPUT_DIR = Path("3d")                # output directory
 MAX_BUILDING_DISTANCE = 25             # meters (max distance for nearest match)
