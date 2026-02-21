@@ -29,3 +29,5 @@ Generate GLB models from _bld.json files
 
 > python bld2mesh.py 3d/157757_bld.json 
 
+fzi is in gebaeude_lod2_457000_5428000.json
+bldg_DEBWL51140001vVs 
