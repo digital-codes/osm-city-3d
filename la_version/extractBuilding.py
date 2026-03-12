@@ -1,9 +1,29 @@
 import json
+import argparse
+import sys
 
-srcFile = "/mnt_ai/data/ka3d/hauenstein-20260127/CityJSON/gebaeude_lod2_457000_5428000.json"
 
-bldId = "bldg_DEBWL51140001vVs"
+parser = argparse.ArgumentParser()
+parser.add_argument("-f", "--file", default="/mnt_ai/data/odd26/ka3d/hauenstein-20260127/CityJSON/gebaeude_lod2_457000_5428000.json", help="Path to CityJSON file")
+parser.add_argument("--building", "-b", default="bldg_DEBWL51140001vVs", help="Building ID to extract")
+parser.add_argument("--output", "-o", default="fzi_holl.json", help="Output file name")
 
+args = parser.parse_args()
+
+print("Extracting building", args.building, "from file", args.file)
+
+srcFile = args.file
+bldId = args.building
+
+# holl
+# gebaeude_lod2_457000_5428000.json
+# bldg_DEBWL51140001vVs
+
+
+# kleine kirche 
+# gebaeude_lod2_456000_5428000    
+# bldg_DEBWL51140001TVP     
+    
 with open(srcFile) as f:
     d = json.load(f)
 
@@ -42,7 +62,7 @@ result = {
 #d["cityjson_tile"] = tile
 #d["cityjson_building_id"] = bldId
 
-with open("fzi_bld.json", "w") as f:
+with open(args.output, "w") as f:
     json.dump(result, f, indent=2)
     
     

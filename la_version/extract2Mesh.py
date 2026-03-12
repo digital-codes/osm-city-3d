@@ -238,6 +238,9 @@ def make_mesh(bld, output_dir):
         faces = np.array(faces, dtype=int)
         mesh = trimesh.Trimesh(vertices=vertices_local, faces=faces, process=False)
         meshes[sem_type] = mesh
+        mesh.visual.vertex_colors = np.tile(
+            trimesh.visual.random_color(), (len(vertices_local), 1)
+        )
 
     if not meshes:
         error("No faces generated for any surface type.")
